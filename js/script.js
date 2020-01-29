@@ -1,8 +1,8 @@
 function toggleMeny() {
     
-    document.querySelector(".navLinks").classList.toggle("navActive");
-    document.querySelector(".head").classList.toggle("toggle");
+    document.querySelector(".navLinks").classList.toggle("active");
+    document.querySelector(".linkContainer").classList.toggle("toggle");
 
 }
 
-document.querySelector(".head").addEventListener("click", toggleMeny);
+document.querySelector(".linkContainer").addEventListener("click", toggleMeny);

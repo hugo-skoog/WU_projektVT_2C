@@ -1,5 +1,7 @@
 * {
     margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 
@@ -7,10 +9,10 @@
 
     .gridWrapper {
         width: 100vw;
-        height: 100vh;
+        height: 200vh;
         display: grid;
         grid-template-columns: 1fr, 1fr, 1fr;
-        grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+        grid-template-rows: repeat(6, 1fr);
         grid-template-areas:
         "head head head"
         "article1 article1 article1"
@@ -29,31 +31,22 @@
         border-bottom: solid black 1px;
     }
 
-    .head div {
-        width: 10px;
-        height: 2px;
-        background-color: black;
-        margin: 1px;
-        border-radius: 10%;
-        transition: ease 0.25s;
+    .logo {
+        width: 250px;
     }
 
-    .navLinks {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        position: absolute;
-        right: 0px;
-        top: -90vh;
-        height: 90vh;
-        background-color: lightgreen;
-        align-items: center;
-        width: 20%;
-        transition: ease 0.25s;
+    .lineContainer {
+        position: relative;
+        top: -10px;
     }
-    
-    .navActive {
-        transform: translateY(100vh);
+
+    .lineContainer div{
+        width: 25px;
+        height: 5px;
+        background-color: black;
+        margin: 2px;
+        border-radius: 10%;
+        transition: ease 0.25s;
     }
 
     .toggle .line1 {
@@ -68,9 +61,20 @@
         transform: rotate(45deg) translate(-5px, -6px);
     }
 
-    .logoText {
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        
+    .navLinks {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        right: 0px;
+        top: -90vh;
+        height: 90vh;
+        background-color: rgba(255, 255, 255, 0);
+        align-items: center;
+        width: 20%;
+        transition: ease 0.25s;
+        border: solid black 1px;
+        border-radius: 2px;
     }
 
     .article1 {
@@ -83,9 +87,15 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
+        border-top: solid black 1px;
     }
 
     ul {
         list-style-type: none;
+    }
+
+    ul a {
+        text-decoration: none;
+        color: black;
     }
 }
