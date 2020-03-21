@@ -213,7 +213,7 @@ body {
     background-position: center;
 }
 
-.specific img {
+.specificProduct img {
     height: auto;
     width: 33.333vw;
 }
@@ -563,6 +563,11 @@ direction: ltr;
         height: auto;
         width: 100vw;
         border-radius: 2px;
+    }
+
+    .specificProduct img {
+        height: auto;
+        width: 100vw;
     }
 
     .arrowCont {
