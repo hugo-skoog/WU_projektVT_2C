@@ -14,8 +14,8 @@ function arrowMenyRight() {
         } else {
             console.log("Slide to the right");
         }
-        arrowRight.classList.add("arrRightActive")
-        slideContainer.classList.add("slideRight")
+        arrowRight.classList.add("arrRightActive");
+        slideContainer.classList.add("slideRight");
     }
 
 }
@@ -24,7 +24,7 @@ function arrowMenyLeft() {
 
     if (arrowRight.classList.contains("arrRightActive")) {
         arrowRight.classList.remove("arrRightActive")
-        slideContainer.classList.add("slideRight")
+        slideContainer.classList.remove("slideRight")
         console.log("Slide to the left");
     } else {
         if (arrowLeft.classList.contains("arrLeftActive")) {
@@ -33,8 +33,8 @@ function arrowMenyLeft() {
             console.log("Slide to the left");
             slideContainer.classList.toggle("slideLeft")
         }
-        arrowLeft.classList.add("arrLeftActive")
-        slideContainer.classList.add("slideLeft")
+        arrowLeft.classList.add("arrLeftActive");
+        slideContainer.classList.add("slideLeft");
     }
 
 }
